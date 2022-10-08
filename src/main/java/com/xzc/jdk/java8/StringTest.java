@@ -104,9 +104,9 @@ public class StringTest {
 //        StringBuilder builder = new StringBuilder("22222");
 //        StringTest s = new StringTest(builder);
 
-        StringTest s = new StringTest("1UTF-8");
-//        System.out.println("s = " + s.value.charAt(1));
-
-        System.out.println("s = " + s.codePointBefore(1));
+        String a = null;
+        if (true || a.equals(1)) {
+            System.out.println(11111);
+        }
     }
 }

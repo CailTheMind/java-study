@@ -20,7 +20,7 @@ public class RedPacketUtils {
      * @param max      - 单个数字上限
      * @return - 返回符合要求的数字列表
      */
-    public static List<BigDecimal> genRanddomList(BigDecimal totalMoney, Integer splitNum, BigDecimal min, BigDecimal max) {
+    public static List<BigDecimal> genRandomList(BigDecimal totalMoney, Integer splitNum, BigDecimal min, BigDecimal max) {
         totalMoney = totalMoney.multiply(new BigDecimal(100));
         min = min.multiply(new BigDecimal(100));
         max = max.multiply(new BigDecimal(100));
@@ -151,7 +151,7 @@ public class RedPacketUtils {
 
     public static void main(String[] args) {
         Long startTi = System.currentTimeMillis();
-        List<BigDecimal> li = genRanddomList(new BigDecimal(100), 10, new BigDecimal(0.01), new BigDecimal(11));
+        List<BigDecimal> li = genRandomList(new BigDecimal(100), 10, new BigDecimal(0.01), new BigDecimal(11));
         li = randomArrayList(li);
         BigDecimal total = BigDecimal.ZERO;
 //    System.out.println("======li=========li:"+li);
